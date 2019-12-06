@@ -1,41 +1,35 @@
-package Exercicio;
+package exercicio;
 
 import java.util.ArrayList;
 import java.util.Collection;
 
 public class Log {
-	private Collection<String> texto;
-
-	
+	private Collection<String> textos;
+	private Object getTexto;
 
 	public Collection<String> getTexto() {
-		return texto;
+		return textos;
 	}
 
 	public void setTexto(Collection<String> texto) {
-		this.texto = texto;
+		this.textos = texto;
 	}
 	
-    public static void main(String[] args) {
-    	
-    	Log log = new Log();
-    	log.setTexto(new ArrayList<String>());
-        log.getTexto().add("log1");
-        log.getTexto().add("log2");
-        log.getTexto().add("log3");
-        
-        
-        Log log2 = new Log();
-    	log2.setTexto(new ArrayList<String>());
-        log2.getTexto().add("log4");
-        log2.getTexto().add("log5");
-        log2.getTexto().add("log6");
-        
-        System.out.println(log2.getTexto());
-      
-        
-    }
-	
-	
+	public static void main(String[] args) {
+		Log log = new Log();
+		log.setTexto(new ArrayList<String>());
+		
+		log.getTexto().add("Log1");	
+		log.getTexto().add("Log2");
+		log.getTexto().add("Log3");
+		
+		Log log2 = new Log();
+		log2.setTexto(new ArrayList<String>());
+		
+		log2.getTexto().add("Log1");	
+		log2.getTexto().add("Log2");
+		log2.getTexto().add("Log4");
+		}	
+
 	
 }
